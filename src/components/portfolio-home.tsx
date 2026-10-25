@@ -16,6 +16,7 @@ import {
   education,
   navItems,
   profile,
+  publicAssetPath,
   projects,
   skills,
 } from "@/data/portfolio";
@@ -30,6 +31,7 @@ const skillGroups = [
 ] as const;
 
 const resumeUrl = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Likhitha_Bandaru_Resume_IBM_Data_AI.pdf`;
+const profileImageUrl = publicAssetPath("/likhitha-profile.jpg");
 
 type Toast = { id: number; title: string; detail: string };
 
@@ -170,7 +172,7 @@ export function PortfolioHome() {
       >
         <a className="identity" href="#home" aria-label="Likhitha Bandaru — home">
           <Image
-            src="/likhitha-profile.jpg"
+            src={profileImageUrl}
             alt=""
             width={48}
             height={48}
@@ -302,7 +304,7 @@ export function PortfolioHome() {
             <div className="hero-portrait-wrap">
               <div className="portrait-image-frame">
                 <Image
-                  src="/likhitha-profile.jpg"
+                  src={profileImageUrl}
                   alt="Portrait of Likhitha Bandaru"
                   width={640}
                   height={760}
@@ -604,7 +606,7 @@ export function PortfolioHome() {
           <aside className="contact-profile-card">
             <div className="contact-profile-image">
               <Image
-                src="/likhitha-profile.jpg"
+                src={profileImageUrl}
                 alt="Likhitha Bandaru, Software Engineer focused on Data and AI"
                 width={640}
                 height={760}

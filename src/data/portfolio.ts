@@ -13,6 +13,9 @@ export type ProjectMeta = {
   impact: string[];
 };
 
+export const publicAssetPath = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${path}`;
+
 export const navItems = [
   { id: "home", label: "Home", icon: "⌂" },
   { id: "about", label: "About", icon: "◌" },
@@ -93,7 +96,7 @@ export const projects: ProjectMeta[] = [
     tech: ["Python", "Gemini API", "Claude API", "LangChain", "FAISS", "Flask", "PostgreSQL", "Docker"],
     github: null,
     demo: null,
-    image: "/projects/smartdata-assist.svg",
+    image: publicAssetPath("/projects/smartdata-assist.svg"),
     impact: [
       "Built a metadata-driven RAG flow grounded in data product descriptions, schema, and ownership metadata.",
       "Generated SQL from natural language with guardrails and PII masking before results reached the LLM.",
@@ -110,7 +113,7 @@ export const projects: ProjectMeta[] = [
     tech: ["Python", "SQL", "Airflow", "dbt", "Snowflake", "Fivetran-style connectors", "Great Expectations"],
     github: null,
     demo: null,
-    image: "/projects/datapulse.svg",
+    image: publicAssetPath("/projects/datapulse.svg"),
     impact: [
       "Migrated a script-based ingestion flow into an Airflow-driven pipeline loading into Snowflake.",
       "Separated source-aligned and aggregate data products using dbt staging, intermediate, and mart layers.",
@@ -127,7 +130,7 @@ export const projects: ProjectMeta[] = [
     tech: ["Python", "Pandas", "Scikit-learn", "MLflow", "Flask", "Docker", "GitHub Actions"],
     github: null,
     demo: null,
-    image: "/projects/insightml.svg",
+    image: publicAssetPath("/projects/insightml.svg"),
     impact: [
       "Built a feature pipeline and compared classification models with precision, recall, and F1-score.",
       "Tracked experiments, metrics, and model versions in MLflow, then registered the best-performing model.",
