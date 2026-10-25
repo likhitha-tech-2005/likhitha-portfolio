@@ -1,0 +1,25 @@
+<svg width="720" height="860" viewBox="0 0 720 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="860" rx="36" fill="#EDF0F3"/>
+  <circle cx="380" cy="260" r="170" fill="#CBD5E1" fill-opacity="0.55"/>
+  <path d="M228 688C228 580.443 306.443 502 414 502H490C597.557 502 676 580.443 676 688V860H228V688Z" fill="#1A2333"/>
+  <path d="M246 690C246 610.756 311.756 545 391 545H478C557.244 545 623 610.756 623 690V860H246V690Z" fill="#EEF2F6"/>
+  <path d="M296 304C296 216.554 360.554 152 448 152C535.446 152 600 216.554 600 304V380H296V304Z" fill="#E8BEA4"/>
+  <path d="M334 330C334 244.595 400.595 178 486 178H525C611.405 178 678 244.595 678 330V392H334V330Z" fill="#1D2333"/>
+  <path d="M364 294C364 230.048 417.048 177 481 177H504C567.952 177 621 230.048 621 294V299H364V294Z" fill="#1D2333"/>
+  <path d="M342 378C342 312.611 395.611 259 461 259H517C582.389 259 636 312.611 636 378V392H342V378Z" fill="#F2D0B3"/>
+  <path d="M400 333C420.672 304.86 453.764 286 490 286C532.698 286 570.522 311.454 591 350.5C570.956 367.664 533.784 386 481 386C444.38 386 413.605 369.596 400 333Z" fill="#141A22"/>
+  <ellipse cx="468" cy="351" rx="18" ry="20" fill="#141A22"/>
+  <circle cx="458" cy="346" r="5" fill="#F8F8F7"/>
+  <circle cx="510" cy="346" r="5" fill="#F8F8F7"/>
+  <path d="M458 390C477.516 403.956 510.052 403.703 528 390" stroke="#1A2333" stroke-width="8" stroke-linecap="round"/>
+  <path d="M370 455L487 520L611 455" stroke="#315CFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M144 470C173.385 429.751 230.585 404 291 404H332C292.381 444.922 271.962 503.532 270 575L144 470Z" fill="#EFF4FA"/>
+  <path d="M130 585C130 546.34 161.34 515 200 515H250L271 669H130V585Z" fill="#1D2333"/>
+  <path d="M214 494L322 530L292 676H180L214 494Z" fill="#0F172A"/>
+  <rect x="315" y="612" width="120" height="40" rx="20" fill="#315CFF" fill-opacity="0.18"/>
+  <rect x="455" y="612" width="120" height="40" rx="20" fill="#1F9D8B" fill-opacity="0.18"/>
+  <path d="M163 192L236 123H288L226 194L163 192Z" fill="#315CFF" fill-opacity="0.6"/>
+  <circle cx="118" cy="194" r="46" fill="#DCE3F6"/>
+  <circle cx="594" cy="216" r="26" fill="#1F9D8B" fill-opacity="0.15"/>
+  <circle cx="623" cy="701" r="18" fill="#315CFF" fill-opacity="0.15"/>
+</svg>
