@@ -9,37 +9,33 @@ export type ProjectMeta = {
   tech: string[];
   github: string | null;
   demo: string | null;
+  image: string;
   impact: string[];
 };
 
 export const navItems = [
-  { id: "home", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
+  { id: "home", label: "Home", icon: "⌂" },
+  { id: "about", label: "About", icon: "◌" },
+  { id: "skills", label: "Skills", icon: "✦" },
+  { id: "projects", label: "Projects", icon: "▣" },
+  { id: "education", label: "Education", icon: "▤" },
+  { id: "certifications", label: "Certifications", icon: "✓" },
+  { id: "foundations", label: "Foundations", icon: "⌘" },
+  { id: "contact", label: "Contact", icon: "✉" },
 ] as const;
 
 export const skills = {
   programming: ["Python", "SQL", "Java", "Go (basic)", "JavaScript"],
-  computerScience: [
-    "Data Structures & Algorithms",
-    "Object-Oriented Programming",
-    "DBMS",
-    "Operating Systems",
-    "Computer Networks",
-    "Software Engineering",
-  ],
   dataEngineering: [
     "ETL / ELT pipelines",
-    "Data products",
     "Data modeling",
     "Snowflake",
     "dbt",
-    "Airflow / Astronomer",
-    "Fivetran-style connectors",
-    "Data warehouse design",
+    "Apache Airflow",
+    "Astronomer",
+    "Fivetran",
+    "Data warehouses",
+    "Custom data adapters",
   ],
   aiAndMl: [
     "LLMs",
@@ -48,32 +44,41 @@ export const skills = {
     "Prompt engineering",
     "Gemini",
     "Claude",
+    "Codex",
+    "Open-source LLMs",
     "LangChain",
     "Embeddings",
     "Scikit-learn",
     "Pandas",
     "NumPy",
+  ],
+  mlopsAndDevops: [
     "MLflow",
-  ],
-  backend: [
-    "Flask",
-    "REST APIs",
-    "Authentication",
-    "Input validation",
-    "Error handling",
-    "Docker",
-    "CI / CD",
+    "Model registry",
     "GitHub Actions",
+    "Docker",
+    "Git",
+    "pytest",
+    "AWS",
   ],
-  governance: [
+  dataGovernance: [
     "Metadata",
-    "Data catalog",
-    "Data classification tagging",
+    "Data catalogs",
+    "Data classification",
+    "Tagging",
     "Data masking",
     "Role-based access control",
     "Data quality",
     "SLOs",
     "Compliance",
+  ],
+  softwareEngineering: [
+    "Flask",
+    "REST APIs",
+    "Agile",
+    "InnerSource",
+    "Open source",
+    "Software engineering best practices",
   ],
 } as const;
 
@@ -88,6 +93,7 @@ export const projects: ProjectMeta[] = [
     tech: ["Python", "Gemini API", "Claude API", "LangChain", "FAISS", "Flask", "PostgreSQL", "Docker"],
     github: null,
     demo: null,
+    image: "/projects/smartdata-assist.svg",
     impact: [
       "Built a metadata-driven RAG flow grounded in data product descriptions, schema, and ownership metadata.",
       "Generated SQL from natural language with guardrails and PII masking before results reached the LLM.",
@@ -104,6 +110,7 @@ export const projects: ProjectMeta[] = [
     tech: ["Python", "SQL", "Airflow", "dbt", "Snowflake", "Fivetran-style connectors", "Great Expectations"],
     github: null,
     demo: null,
+    image: "/projects/datapulse.svg",
     impact: [
       "Migrated a script-based ingestion flow into an Airflow-driven pipeline loading into Snowflake.",
       "Separated source-aligned and aggregate data products using dbt staging, intermediate, and mart layers.",
@@ -120,6 +127,7 @@ export const projects: ProjectMeta[] = [
     tech: ["Python", "Pandas", "Scikit-learn", "MLflow", "Flask", "Docker", "GitHub Actions"],
     github: null,
     demo: null,
+    image: "/projects/insightml.svg",
     impact: [
       "Built a feature pipeline and compared classification models with precision, recall, and F1-score.",
       "Tracked experiments, metrics, and model versions in MLflow, then registered the best-performing model.",
@@ -239,6 +247,16 @@ export const profile = {
   phone: "+91 8341950658",
   linkedIn: "https://linkedin.com/in/likhitha-bandaru-33a160421",
   github: "https://github.com/likhitha-tech-2005",
+  availability: "Open to collaborative opportunities • 2026",
+  languages: ["English", "Telugu", "Hindi"],
+  coursework: [
+    "Machine Learning",
+    "Database Management Systems",
+    "Data Structures & Algorithms",
+    "Software Engineering",
+    "Object-Oriented Programming",
+    "Operating Systems",
+  ],
   summary:
     "Software Engineer (B.Tech IT, 2026) and AWS Certified Cloud Practitioner with strong software, data, and AI/ML engineering skills. Builds data products and intelligent applications using Python, advanced SQL, ETL/ELT pipelines, and large language models such as Gemini and Claude.",
 };

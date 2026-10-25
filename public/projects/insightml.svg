@@ -1,0 +1,50 @@
+<svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">InsightML predictive analytics illustration</title>
+  <desc id="desc">A machine learning pipeline diagram showing feature engineering, model training, evaluation, and API deployment.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#09141f"/>
+      <stop offset="100%" stop-color="#10192d"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="28" fill="url(#bg3)"/>
+  <circle cx="160" cy="396" r="110" fill="#7dd3fc" opacity="0.08"/>
+  <circle cx="574" cy="122" r="104" fill="#8b5cf6" opacity="0.08"/>
+
+  <rect x="54" y="72" width="154" height="92" rx="18" fill="#111d2d" stroke="#36557d"/>
+  <text x="82" y="108" fill="#dfeafc" font-size="20" font-family="Arial, sans-serif">Raw Data</text>
+  <text x="88" y="136" fill="#9db4d0" font-size="14" font-family="Arial, sans-serif">Features</text>
+
+  <rect x="242" y="72" width="156" height="92" rx="18" fill="#111d2d" stroke="#36557d"/>
+  <text x="266" y="108" fill="#dfeafc" font-size="20" font-family="Arial, sans-serif">Feature</text>
+  <text x="272" y="136" fill="#9db4d0" font-size="14" font-family="Arial, sans-serif">Engineering</text>
+
+  <rect x="430" y="72" width="168" height="92" rx="18" fill="#111d2d" stroke="#36557d"/>
+  <text x="470" y="108" fill="#dfeafc" font-size="20" font-family="Arial, sans-serif">Model</text>
+  <text x="454" y="136" fill="#9db4d0" font-size="14" font-family="Arial, sans-serif">Training</text>
+
+  <path d="M208 118 H242 M398 118 H430" stroke="#7dd3fc" stroke-width="3" stroke-dasharray="8 8" fill="none"/>
+
+  <rect x="118" y="220" width="186" height="150" rx="20" fill="#12263b" stroke="#36607a"/>
+  <text x="164" y="258" fill="#dfeafc" font-size="18" font-family="Arial, sans-serif">Evaluation</text>
+  <rect x="146" y="280" width="130" height="14" rx="7" fill="url(#cyan)" opacity="0.8"/>
+  <rect x="146" y="306" width="110" height="12" rx="6" fill="#5eead4" opacity="0.7"/>
+
+  <rect x="340" y="220" width="214" height="150" rx="20" fill="#12263b" stroke="#36607a"/>
+  <text x="378" y="258" fill="#dfeafc" font-size="18" font-family="Arial, sans-serif">MLflow + Registry</text>
+  <rect x="368" y="280" width="156" height="16" rx="8" fill="url(#purple)" opacity="0.8"/>
+  <rect x="368" y="308" width="122" height="12" rx="6" fill="#7dd3fc" opacity="0.7"/>
+
+  <path d="M304 270 H340" stroke="#7dd3fc" stroke-width="3" fill="none"/>
+
+  <rect x="212" y="394" width="288" height="54" rx="18" fill="#11273a" stroke="#3d5b7d"/>
+  <text x="286" y="429" fill="#dfeafc" font-size="18" font-family="Arial, sans-serif">Prediction API + Deployment</text>
+</svg>
