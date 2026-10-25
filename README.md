@@ -50,21 +50,16 @@ The main content is kept in:
 
 This project is configured for static export to support GitHub Pages.
 
-1. Create a GitHub repository:
+1. Create a GitHub repository and push the project to its `main` branch:
 
 ```bash
-git init
-git add .
-git commit -m "Initial portfolio commit"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
 git push -u origin main
 ```
 
-2. Add the GitHub Pages workflow file in `.github/workflows/deploy.yml`.
-3. In GitHub, open the repository and go to Settings → Pages.
-4. Set the branch to `gh-pages` and deploy from the GitHub Actions workflow.
-5. After the workflow runs, your site will be available at:
+2. In GitHub, open the repository and go to Settings → Pages.
+3. Set the build and deployment source to **GitHub Actions**.
+4. The workflow in `.github/workflows/deploy.yml` builds and deploys the site on pushes to `main`.
+5. After the workflow succeeds, your site will be available at:
 
 `https://<your-username>.github.io/<your-repo>/`
 
